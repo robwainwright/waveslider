@@ -50,12 +50,14 @@ object WaveSliderDefaults {
         reverseDirection: Boolean = false,
         flatlineOnDrag: Boolean = true,
         animateWave: Boolean = true,
-        reverseFlatline: Boolean = false
+        reverseFlatline: Boolean = false,
+        animationSpeedMs: Int = 10000
     ): WaveAnimationOptions = WaveAnimationOptions(
         reverseDirection = reverseDirection,
         flatlineOnDrag = flatlineOnDrag,
         animateWave = animateWave,
-        reverseFlatline = reverseFlatline
+        reverseFlatline = reverseFlatline,
+        animationSpeedMs = animationSpeedMs
     )
 
     @Composable
